@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://dwuw80fqv18vy"]
+
+[ext_resource type="Script" uid="uid://cx2h73jv14uph" path="res://main.gd" id="1_js8gv"]
+[ext_resource type="Theme" uid="uid://cyqcqk4j08o4w" path="res://themes/main_theme.tres" id="2_5i842"]
+
+[node name="Main" type="Control" unique_id=1157030537]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_js8gv")
+
+[node name="Panel" type="Panel" parent="." unique_id=1896734139]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=1701593483]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer" unique_id=1657116172]
+layout_mode = 2
+alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Panel/MarginContainer/VBoxContainer" unique_id=1897985307]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_5i842")
+columns = 2
+
+[node name="x-label" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=423689677]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "X
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="x-value" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=596701444]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+text = "X
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="y-label" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=2139785374]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Y
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="y-value" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1019665440]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+text = "X
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="z-label" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=594848402]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Z"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="z-value" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1636353387]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+text = "X
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="angle-label" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1904225523]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+text = "ANGLE
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="angle-value" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=223411844]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+text = "X
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="slope-labe" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=539652089]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+text = "SLOPE"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="slope-value" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=724292043]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+text = "X
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Panel/MarginContainer/VBoxContainer" unique_id=1476819709]
+layout_mode = 2
+theme = ExtResource("2_5i842")
+text = "QUIT"
+flat = true
+
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
