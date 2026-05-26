@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b5wmn1fs3jr20"]
+
+[ext_resource type="Texture2D" uid="uid://dlhlxfyke0kba" path="res://assets/ball.png" id="1_7s4qf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cxlvu"]
+
+[node name="Ball" type="RigidBody2D" unique_id=718603355]
+linear_velocity = Vector2(1000, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=990182783]
+shape = SubResource("CircleShape2D_cxlvu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=772596232]
+texture = ExtResource("1_7s4qf")

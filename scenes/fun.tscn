@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://b737rm0xy88gc"]
+
+[ext_resource type="PackedScene" uid="uid://b5wmn1fs3jr20" path="res://scenes/ball.tscn" id="1_17tjs"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_17tjs"]
+bounce = 1.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_17tjs"]
+size = Vector2(700, 492)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_heea4"]
+size = Vector2(2036, 492)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j4dpo"]
+size = Vector2(724, 1660)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2f6vl"]
+size = Vector2(700, 1660)
+
+[node name="Fun" type="Node2D" unique_id=1522446496]
+
+[node name="StaticBodyDown" type="StaticBody2D" parent="." unique_id=1342080966]
+physics_material_override = SubResource("PhysicsMaterial_17tjs")
+
+[node name="Down" type="CollisionShape2D" parent="StaticBodyDown" unique_id=1866554865]
+position = Vector2(333, 1388)
+shape = SubResource("RectangleShape2D_17tjs")
+
+[node name="StaticBodyDown2" type="StaticBody2D" parent="." unique_id=1870788770]
+physics_material_override = SubResource("PhysicsMaterial_17tjs")
+
+[node name="Up" type="CollisionShape2D" parent="StaticBodyDown2" unique_id=85884166]
+position = Vector2(317, -251)
+shape = SubResource("RectangleShape2D_heea4")
+
+[node name="StaticBodyRight" type="StaticBody2D" parent="." unique_id=986673468]
+physics_material_override = SubResource("PhysicsMaterial_17tjs")
+
+[node name="Right" type="CollisionShape2D" parent="StaticBodyRight" unique_id=578903418]
+position = Vector2(1005, 817)
+shape = SubResource("RectangleShape2D_j4dpo")
+
+[node name="StaticBodyLeft" type="StaticBody2D" parent="." unique_id=585853827]
+physics_material_override = SubResource("PhysicsMaterial_17tjs")
+
+[node name="Left" type="CollisionShape2D" parent="StaticBodyLeft" unique_id=1583548451]
+position = Vector2(-342, 810)
+shape = SubResource("RectangleShape2D_2f6vl")
+
+[node name="Ball" parent="." unique_id=718603355 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+
+[node name="Ball2" parent="." unique_id=1779527040 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball3" parent="." unique_id=313424998 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball4" parent="." unique_id=1662681207 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball5" parent="." unique_id=274186537 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball6" parent="." unique_id=1928179863 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball7" parent="." unique_id=623352584 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball8" parent="." unique_id=1142783986 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball9" parent="." unique_id=1806659241 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball10" parent="." unique_id=262250508 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball11" parent="." unique_id=1409041651 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball12" parent="." unique_id=761901697 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball13" parent="." unique_id=134133655 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball14" parent="." unique_id=1874062886 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball15" parent="." unique_id=577628969 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
+
+[node name="Ball16" parent="." unique_id=552616640 instance=ExtResource("1_17tjs")]
+position = Vector2(205, 108)
+linear_velocity = Vector2(10, 0)
