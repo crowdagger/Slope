@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dnmqkryrgpvsw" path="res://scenes/fun.gd" id="1_j4dpo"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_17tjs"]
-bounce = 0.79
+bounce = 0.31
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_17tjs"]
 size = Vector2(700, 492)
@@ -19,6 +19,7 @@ size = Vector2(700, 1660)
 
 [node name="Fun" type="Node2D" unique_id=360400001]
 script = ExtResource("1_j4dpo")
+gravity_vector = Vector3(0, 10, -9.8)
 metadata/_custom_type_script = "uid://dnmqkryrgpvsw"
 
 [node name="StaticBodyDown" type="StaticBody2D" parent="." unique_id=1342080966]

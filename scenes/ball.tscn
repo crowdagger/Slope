@@ -3,9 +3,16 @@
 [ext_resource type="Texture2D" uid="uid://dlhlxfyke0kba" path="res://assets/ball.png" id="1_7s4qf"]
 [ext_resource type="Script" uid="uid://ta0hjhceqcfu" path="res://scenes/ball.gd" id="1_cxlvu"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cxlvu"]
+friction = 0.0
+bounce = 0.3
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_cxlvu"]
+radius = 7.0
 
 [node name="Ball" type="RigidBody2D" unique_id=718603355]
+mass = 0.01
+physics_material_override = SubResource("PhysicsMaterial_cxlvu")
 can_sleep = false
 linear_velocity = Vector2(1000, 0)
 script = ExtResource("1_cxlvu")
@@ -14,4 +21,12 @@ script = ExtResource("1_cxlvu")
 shape = SubResource("CircleShape2D_cxlvu")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=772596232]
+modulate = Color(0, 0, 1, 1)
+scale = Vector2(1.1683632, 1.2387563)
+texture = ExtResource("1_7s4qf")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=670205114]
+modulate = Color(0, 0, 0.3372549, 1)
+z_index = -1
+scale = Vector2(1.3879045, 1.5003074)
 texture = ExtResource("1_7s4qf")

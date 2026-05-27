@@ -5,7 +5,7 @@ const BALL = preload("uid://b5wmn1fs3jr20")
 @export var gravity_vector: Vector3 = Vector3(0, 0, -9.8) 
 
 func _ready() -> void:
-	for x in range(0, 50):
+	for x in range(0, 150):
 		var ball: Ball = BALL.instantiate()
 		ball.position.x = randf_range(100.0, 400.0)
 		ball.position.y = randf_range(100.0, 200.0)
