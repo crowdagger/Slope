@@ -11,9 +11,9 @@ func _process(_delta: float) -> void:
 	var accel: Vector3 = Input.get_accelerometer()
 	board.gravity_vector = accel
 	board.gravity_vector.y = -board.gravity_vector.y
-	x_value.text = "%.2f" % [accel.x]
-	y_value.text = "%.2f" % [accel.y]
-	z_value.text = "%.2f" % [accel.z]
+	x_value.text = "%.1f m/s²" % [accel.x]
+	y_value.text = "%.1f m/s²" % [accel.y]
+	z_value.text = "%.1f m/s²" % [accel.z]
 	var angle: float = accel.angle_to(Vector3(0, 0, -1))
 	angle_value.text = "%.0f⁰" % [rad_to_deg(angle)]
 	slope_value.text = "%.0f %%" % [(100.0 * tan(angle))]
